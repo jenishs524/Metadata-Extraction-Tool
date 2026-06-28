@@ -1,6 +1,10 @@
 # Metadata-Extraction-Tool
 
 
+📘 Metadata Extraction Tool 
+
+It is an advanced, automated digital forensics and OSINT (Open Source Intelligence) tool that extracts, parses, and reports on hidden metadata embedded within files. Metadata—such as author names, software versions, creation timestamps, GPS coordinates, and editing history—is often unintentionally stored in documents, images, PDFs, and other file types. This tool surfaces that hidden information, turning it into actionable intelligence for investigators, penetration testers, and security analysts.
+
 🎯 Objective
 
 To automate the discovery and analysis of embedded file metadata for use in digital forensics, incident response, and reconnaissance. Manual extraction using multiple tools (ExifTool, pdfinfo, etc.) is tedious and inconsistent. This tool provides a unified, automated pipeline that:
@@ -12,6 +16,7 @@ To automate the discovery and analysis of embedded file metadata for use in digi
     Flags high‑value artifacts (GPS coordinates, author usernames, software versions).
 
     Presents findings in a structured, searchable JSON format for easy integration with SIEMs, case management systems, or investigation reports.
+    
 
 🧠 How It Works – Technical Overview
 
@@ -30,6 +35,8 @@ The tool is built around the industry‑standard ExifTool by Phil Harvey—a pow
     Exports Report – Saves a timestamped JSON report for the investigator.
 
 Because ExifTool supports hundreds of file formats, this tool can handle everything from JPEG images to complex Microsoft Office documents, PDFs, and even audio/video containers.
+
+
 ✨ Advanced Features (Real‑World Upgrade)
 Feature	Implementation
 Batch Processing	Scans entire directories recursively – ideal for large‑scale data seizure reviews or pentesting engagement file dumps.
